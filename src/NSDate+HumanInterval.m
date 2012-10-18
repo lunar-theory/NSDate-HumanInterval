@@ -18,7 +18,7 @@
 
 @implementation NSDate (HumanInterval)
 
-- (NSString *) humanIntervalSinceNow {
+- (NSString *)humanIntervalSinceNow {
     int delta = [self timeIntervalSinceNow];
     delta *= -1;
     if (delta < 0) {
@@ -55,5 +55,42 @@
         return [NSString stringWithFormat:NSLocalizedString(@"%u years", nil), delta / YEAR];
     }
 }
+
+- (NSString *)humanIntervalAgoSinceNow {
+    int delta = [self timeIntervalSinceNow];
+    delta *= -1;
+    if (delta < 0) {
+        return [self description];
+    } else if (delta < 1 * MINUTE) {
+        return NSLocalizedString(@"just now", nil);
+    } else if (delta < 2 * MINUTE) {
+        return NSLocalizedString(@"a minute ago", nil);
+    } else if (delta <= 45 * MINUTE) {
+        return [NSString stringWithFormat:NSLocalizedString(@"%u minutes ago", nil), delta / MINUTE];
+    } else if (delta <= 90 * MINUTE) {
+        return NSLocalizedString(@"an hour ago", nil);
+    } else if (delta < 3 * HOUR) {
+        return NSLocalizedString(@"2 hours ago", nil);
+    } else if (delta < 23 * HOUR) {
+        return [NSString stringWithFormat:NSLocalizedString(@"%u hours ago", nil), delta / HOUR];
+    } else if (delta < 36 * HOUR) {
+        return NSLocalizedString(@"a day ago", nil);
+    } else if (delta < 72 * HOUR) {
+        return NSLocalizedString(@"2 days ago", nil);
+    } else if (delta < 7 * DAY) {
+        return [NSString stringWithFormat:NSLocalizedString(@"%u days ago", nil), delta / DAY];
+    } else if (delta < 11 * DAY) {
+        return NSLocalizedString(@"a week ago", nil);
+    } else if (delta < 14 * DAY) {
+        return NSLocalizedString(@"2 weeks ago", nil);
+    } else if (delta < 9 * WEEK) {
+        return [NSString stringWithFormat:NSLocalizedString(@"%u weeks ago", nil), delta / WEEK];
+    } else if (delta < 19 * MONTH) {
+        return [NSString stringWithFormat:NSLocalizedString(@"%u months ago", nil), delta / MONTH];
+    } else if (delta < 2 * YEAR) {
+        return NSLocalizedString(@"a year ago", nil);
+    } else {
+        return [NSString stringWithFormat:NSLocalizedString(@"%u years ago", nil), delta / YEAR];
+    }}
 
 @end
