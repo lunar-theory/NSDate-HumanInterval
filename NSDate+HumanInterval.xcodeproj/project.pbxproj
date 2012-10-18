@@ -20,6 +20,7 @@
 		6326A84F120FB6C6000A8FFF /* NSDate+HumanInterval.m in Resources */ = {isa = PBXBuildFile; fileRef = 6326A80D120FB469000A8FFF /* NSDate+HumanInterval.m */; };
 		6326A850120FB6CF000A8FFF /* HumanIntervalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326A82E120FB5C8000A8FFF /* HumanIntervalTest.m */; };
 		6326A851120FB6D4000A8FFF /* NSDate+HumanInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326A80D120FB469000A8FFF /* NSDate+HumanInterval.m */; };
+		63F95FF7162FCEE300DCF83A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F95FF6162FCEE300DCF83A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		6326A80D120FB469000A8FFF /* NSDate+HumanInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanInterval.m"; sourceTree = "<group>"; };
 		6326A82E120FB5C8000A8FFF /* HumanIntervalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanIntervalTest.m; sourceTree = "<group>"; };
 		6326A839120FB636000A8FFF /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F95FF6162FCEE300DCF83A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NSDate_Interval-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NSDate_Interval-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				63F95FF6162FCEE300DCF83A /* Default-568h@2x.png */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
@@ -188,7 +191,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NSDate+HumanInterval" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,6 +213,7 @@
 			files = (
 				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
 				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
+				63F95FF7162FCEE300DCF83A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +279,7 @@
 				GCC_PREFIX_HEADER = NSDate_Interval_Prefix.pch;
 				INFOPLIST_FILE = "NSDate_Interval-Info.plist";
 				PRODUCT_NAME = "NSDate-Interval";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -283,6 +292,7 @@
 				GCC_PREFIX_HEADER = NSDate_Interval_Prefix.pch;
 				INFOPLIST_FILE = "NSDate_Interval-Info.plist";
 				PRODUCT_NAME = "NSDate-Interval";
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

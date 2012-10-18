@@ -27,12 +27,12 @@
 
 - (void) test35SecsAgo {
     NSDate *date = [NSDate dateWithTimeIntervalSinceNow:-35];
-    STAssertTrue([[date humanIntervalSinceNow] isEqualToString: @"35 secs"], @"35 seconds ago");
+    STAssertTrue([[date humanIntervalSinceNow] isEqualToString: @"just now"], @"35 seconds ago is just now");
 }
 
 - (void) test50SecsAgo {
     NSDate *date = [NSDate dateWithTimeIntervalSinceNow:-50];
-    STAssertTrue([[date humanIntervalSinceNow] isEqualToString: @"50 secs"], @"50 seconds ago");
+    STAssertTrue([[date humanIntervalSinceNow] isEqualToString: @"just now"], @"50 seconds ago is just now");
 }
 
 - (void) test70SecsAgo {

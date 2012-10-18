@@ -23,10 +23,8 @@
     delta *= -1;
     if (delta < 0) {
         return [self description];
-    } else if (delta <= 30 * SECOND) {
-        return NSLocalizedString(@"just now", nil);
     } else if (delta < 1 * MINUTE) {
-        return [NSString stringWithFormat:@"%u secs", delta];
+        return NSLocalizedString(@"just now", nil);
     } else if (delta < 2 * MINUTE) {
         return @"1 min";
     } else if (delta <= 45 * MINUTE) {
