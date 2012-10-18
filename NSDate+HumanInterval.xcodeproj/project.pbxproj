@@ -322,6 +322,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -350,6 +351,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};

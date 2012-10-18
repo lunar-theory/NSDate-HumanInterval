@@ -26,33 +26,33 @@
     } else if (delta < 1 * MINUTE) {
         return NSLocalizedString(@"just now", nil);
     } else if (delta < 2 * MINUTE) {
-        return @"1 min";
+        return NSLocalizedString(@"1 min", nil);
     } else if (delta <= 45 * MINUTE) {
-        return [NSString stringWithFormat:@"%u mins", delta / MINUTE];
+        return [NSString stringWithFormat:NSLocalizedString(@"%u mins", nil), delta / MINUTE];
     } else if (delta <= 90 * MINUTE) {
-        return @"1 hour";
+        return NSLocalizedString(@"1 hour", nil);
     } else if (delta < 3 * HOUR) {
-        return @"2 hours";
+        return NSLocalizedString(@"2 hours", nil);
     } else if (delta < 23 * HOUR) {
-        return [NSString stringWithFormat:@"%u hours", delta / HOUR];
+        return [NSString stringWithFormat:NSLocalizedString(@"%u hours", nil), delta / HOUR];
     } else if (delta < 36 * HOUR) {
-        return @"1 day";
+        return NSLocalizedString(@"1 day", nil);
     } else if (delta < 72 * HOUR) {
-        return @"2 days";
+        return NSLocalizedString(@"2 days", nil);
     } else if (delta < 7 * DAY) {
-        return [NSString stringWithFormat:@"%u days", delta / DAY];
+        return [NSString stringWithFormat:NSLocalizedString(@"%u days", nil), delta / DAY];
     } else if (delta < 11 * DAY) {
-        return @"1 week";
+        return NSLocalizedString(@"1 week", nil);
     } else if (delta < 14 * DAY) {
-        return @"2 weeks";
+        return NSLocalizedString(@"2 weeks", nil);
     } else if (delta < 9 * WEEK) {
-        return [NSString stringWithFormat:@"%u weeks", delta / WEEK];
+        return [NSString stringWithFormat:NSLocalizedString(@"%u weeks", nil), delta / WEEK];
     } else if (delta < 19 * MONTH) {
-        return [NSString stringWithFormat:@"%u months", delta / MONTH];        
+        return [NSString stringWithFormat:NSLocalizedString(@"%u months", nil), delta / MONTH];
     } else if (delta < 2 * YEAR) {
-        return @"1 year";
+        return NSLocalizedString(@"1 year", nil);
     } else {
-        return [NSString stringWithFormat:@"%u years", delta / YEAR];        
+        return [NSString stringWithFormat:NSLocalizedString(@"%u years", nil), delta / YEAR];
     }
 }
 
