@@ -1,11 +1,11 @@
 # From http://shanesbrain.net/2008/7/9/using-xcode-with-git
 # xcode noise
-build/*
+build/
 *.pbxuser
 *.mode1v3
-
-# old skool
-.svn
+*.xcworkspace
+xcuserdata
+dSYM_Archive
 
 # osx noise
 .DS_Store
