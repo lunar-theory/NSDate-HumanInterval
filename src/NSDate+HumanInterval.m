@@ -24,35 +24,35 @@
     if (delta < 0) {
         return [self description];
     } else if (delta < 1 * MINUTE) {
-        return NSLocalizedString(@"just now", nil);
+        return NSLocalizedStringFromTable(@"just now", @"NSDate+HumanInterval", nil);
     } else if (delta < 2 * MINUTE) {
-        return NSLocalizedString(@"1 min", nil);
+        return NSLocalizedStringFromTable(@"1 min", @"NSDate+HumanInterval", nil);
     } else if (delta <= 45 * MINUTE) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u mins", nil), delta / MINUTE];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u mins", @"NSDate+HumanInterval", nil), delta / MINUTE];
     } else if (delta <= 90 * MINUTE) {
-        return NSLocalizedString(@"1 hour", nil);
+        return NSLocalizedStringFromTable(@"1 hour", @"NSDate+HumanInterval", nil);
     } else if (delta < 3 * HOUR) {
-        return NSLocalizedString(@"2 hours", nil);
+        return NSLocalizedStringFromTable(@"2 hours", @"NSDate+HumanInterval", nil);
     } else if (delta < 23 * HOUR) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u hours", nil), delta / HOUR];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u hours", @"NSDate+HumanInterval", nil), delta / HOUR];
     } else if (delta < 36 * HOUR) {
-        return NSLocalizedString(@"1 day", nil);
+        return NSLocalizedStringFromTable(@"1 day", @"NSDate+HumanInterval", nil);
     } else if (delta < 72 * HOUR) {
-        return NSLocalizedString(@"2 days", nil);
+        return NSLocalizedStringFromTable(@"2 days", @"NSDate+HumanInterval", nil);
     } else if (delta < 7 * DAY) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u days", nil), delta / DAY];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u days", @"NSDate+HumanInterval", nil), delta / DAY];
     } else if (delta < 11 * DAY) {
-        return NSLocalizedString(@"1 week", nil);
+        return NSLocalizedStringFromTable(@"1 week", @"NSDate+HumanInterval", nil);
     } else if (delta < 14 * DAY) {
-        return NSLocalizedString(@"2 weeks", nil);
+        return NSLocalizedStringFromTable(@"2 weeks", @"NSDate+HumanInterval", nil);
     } else if (delta < 9 * WEEK) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u weeks", nil), delta / WEEK];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u weeks", @"NSDate+HumanInterval", nil), delta / WEEK];
     } else if (delta < 19 * MONTH) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u months", nil), delta / MONTH];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u months", @"NSDate+HumanInterval", nil), delta / MONTH];
     } else if (delta < 2 * YEAR) {
-        return NSLocalizedString(@"1 year", nil);
+        return NSLocalizedStringFromTable(@"1 year", @"NSDate+HumanInterval", nil);
     } else {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u years", nil), delta / YEAR];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u years", @"NSDate+HumanInterval", nil), delta / YEAR];
     }
 }
 
@@ -62,35 +62,35 @@
     if (delta < 0) {
         return [self description];
     } else if (delta < 1 * MINUTE) {
-        return NSLocalizedString(@"just now", nil);
+        return NSLocalizedStringFromTable(@"just now", @"NSDate+HumanInterval", nil);
     } else if (delta < 2 * MINUTE) {
-        return NSLocalizedString(@"a minute ago", nil);
+        return NSLocalizedStringFromTable(@"a minute ago", @"NSDate+HumanInterval", nil);
     } else if (delta <= 45 * MINUTE) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u minutes ago", nil), delta / MINUTE];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u minutes ago", @"NSDate+HumanInterval", nil), delta / MINUTE];
     } else if (delta <= 90 * MINUTE) {
-        return NSLocalizedString(@"an hour ago", nil);
+        return NSLocalizedStringFromTable(@"an hour ago", @"NSDate+HumanInterval", nil);
     } else if (delta < 3 * HOUR) {
-        return NSLocalizedString(@"2 hours ago", nil);
+        return NSLocalizedStringFromTable(@"2 hours ago", @"NSDate+HumanInterval", nil);
     } else if (delta < 23 * HOUR) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u hours ago", nil), delta / HOUR];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u hours ago", @"NSDate+HumanInterval", nil), delta / HOUR];
     } else if (delta < 36 * HOUR) {
-        return NSLocalizedString(@"a day ago", nil);
+        return NSLocalizedStringFromTable(@"a day ago", @"NSDate+HumanInterval", nil);
     } else if (delta < 72 * HOUR) {
-        return NSLocalizedString(@"2 days ago", nil);
+        return NSLocalizedStringFromTable(@"2 days ago", @"NSDate+HumanInterval", nil);
     } else if (delta < 7 * DAY) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u days ago", nil), delta / DAY];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u days ago", @"NSDate+HumanInterval", nil), delta / DAY];
     } else if (delta < 11 * DAY) {
-        return NSLocalizedString(@"a week ago", nil);
+        return NSLocalizedStringFromTable(@"a week ago", @"NSDate+HumanInterval", nil);
     } else if (delta < 14 * DAY) {
-        return NSLocalizedString(@"2 weeks ago", nil);
+        return NSLocalizedStringFromTable(@"2 weeks ago", @"NSDate+HumanInterval", nil);
     } else if (delta < 9 * WEEK) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u weeks ago", nil), delta / WEEK];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u weeks ago", @"NSDate+HumanInterval", nil), delta / WEEK];
     } else if (delta < 19 * MONTH) {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u months ago", nil), delta / MONTH];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u months ago", @"NSDate+HumanInterval", nil), delta / MONTH];
     } else if (delta < 2 * YEAR) {
-        return NSLocalizedString(@"a year ago", nil);
+        return NSLocalizedStringFromTable(@"a year ago", @"NSDate+HumanInterval", nil);
     } else {
-        return [NSString stringWithFormat:NSLocalizedString(@"%u years ago", nil), delta / YEAR];
+        return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%u years ago", @"NSDate+HumanInterval", nil), delta / YEAR];
     }}
 
 @end
