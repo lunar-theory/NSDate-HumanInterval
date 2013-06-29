@@ -6,8 +6,6 @@
 //  Copyright 2010-2011 Lunar/Theory. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface NSDate (HumanInterval)
 - (NSString *)humanIntervalSinceNow;
 - (NSString *)humanIntervalAgoSinceNow;
