@@ -15,7 +15,7 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		5576C25518DDF8F800674456 /* NSDate+HumanInterval.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5576C25218DDF8DF00674456 /* NSDate+HumanInterval.strings */; };
+		5566749A18DDFD8100FA3C81 /* HILanguages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5566749918DDFD8100FA3C81 /* HILanguages.bundle */; };
 		5576C25C18DDFA0A00674456 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5576C25B18DDFA0A00674456 /* Default-568h@2x.png */; };
 		6326A80E120FB469000A8FFF /* NSDate+HumanInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326A80D120FB469000A8FFF /* NSDate+HumanInterval.m */; };
 		6326A84E120FB6C6000A8FFF /* HumanIntervalTest.m in Resources */ = {isa = PBXBuildFile; fileRef = 6326A82E120FB5C8000A8FFF /* HumanIntervalTest.m */; };
@@ -36,9 +36,8 @@
 		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* NSDate_Interval_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_Interval_Prefix.pch; sourceTree = "<group>"; };
-		5576C25318DDF8DF00674456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "src/en.lproj/NSDate+HumanInterval.strings"; sourceTree = "<group>"; };
-		5576C25418DDF8F800674456 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "src/es.lproj/NSDate+HumanInterval.strings"; sourceTree = "<group>"; };
+		5566749918DDFD8100FA3C81 /* HILanguages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HILanguages.bundle; path = Shared/HILanguages.bundle; sourceTree = SOURCE_ROOT; };
+		5566749B18DE037700FA3C81 /* NSDate_Interval_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_Interval_Prefix.pch; sourceTree = "<group>"; };
 		5576C25B18DDFA0A00674456 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6326A80C120FB469000A8FFF /* NSDate+HumanInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanInterval.h"; sourceTree = "<group>"; };
 		6326A80D120FB469000A8FFF /* NSDate+HumanInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanInterval.m"; sourceTree = "<group>"; };
@@ -101,8 +100,10 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5566749B18DE037700FA3C81 /* NSDate_Interval_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				8D1107310486CEB800E47090 /* NSDate_Interval-Info.plist */,
+				5566749918DDFD8100FA3C81 /* HILanguages.bundle */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -124,10 +125,8 @@
 		29B97315FDCFA39411CA2CEA /* src */ = {
 			isa = PBXGroup;
 			children = (
-				5576C25218DDF8DF00674456 /* NSDate+HumanInterval.strings */,
 				6326A80C120FB469000A8FFF /* NSDate+HumanInterval.h */,
 				6326A80D120FB469000A8FFF /* NSDate+HumanInterval.m */,
-				32CA4F630368D1EE00C91783 /* NSDate_Interval_Prefix.pch */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -219,8 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5576C25518DDF8F800674456 /* NSDate+HumanInterval.strings in Resources */,
 				5576C25C18DDFA0A00674456 /* Default-568h@2x.png in Resources */,
+				5566749A18DDFD8100FA3C81 /* HILanguages.bundle in Resources */,
 				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
 				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
 			);
@@ -276,19 +275,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		5576C25218DDF8DF00674456 /* NSDate+HumanInterval.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5576C25318DDF8DF00674456 /* en */,
-				5576C25418DDF8F800674456 /* es */,
-			);
-			name = "NSDate+HumanInterval.strings";
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -298,7 +284,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = src/NSDate_Interval_Prefix.pch;
+				GCC_PREFIX_HEADER = Shared/NSDate_Interval_Prefix.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Shared/NSDate_Interval-Info.plist";
 				PRODUCT_NAME = "NSDate-Interval";
 				SDKROOT = iphoneos;
@@ -311,7 +297,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = src/NSDate_Interval_Prefix.pch;
+				GCC_PREFIX_HEADER = Shared/NSDate_Interval_Prefix.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Shared/NSDate_Interval-Info.plist";
 				PRODUCT_NAME = "NSDate-Interval";
 				SDKROOT = iphoneos;

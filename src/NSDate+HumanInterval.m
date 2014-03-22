@@ -16,12 +16,13 @@
 #define MONTH  (30 * DAY)
 #define YEAR   (365 * DAY)
 
+
 @implementation NSDate (HumanInterval)
+
 
 - (NSString *)humanIntervalSinceNow
 {
     int delta = [self timeIntervalSinceNow];
-
     delta *= -1;
 
     if (delta < 0) {
@@ -78,9 +79,8 @@
 - (NSString *)humanIntervalAgoSinceNow
 {
     int delta = [self timeIntervalSinceNow];
-
     delta *= -1;
-
+ 
     if (delta < 0) {
         return [self description];
     }
