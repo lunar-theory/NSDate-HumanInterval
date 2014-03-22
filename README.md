@@ -3,7 +3,7 @@ NSDate+HumanInterval
 
 An Objective-C category that adds a single method to `NSDate`:
 `-humanIntervalSinceNow`. This method returns an `NSString` with a
-human-readable (English) representation of the `NSDate`, relative to now. The
+human-readable (English, Spanish) representation of the `NSDate`, relative to now. The
 default values are short, for use on the iPhone. Some examples:
 
 * "just now": Less than 30 seconds ago.
@@ -35,10 +35,12 @@ Then just call `humanIntervalSinceNow` on an `NSDate` object:
 If you'd like to run the unit tests, open `NSDate+HumanInterval.xcodeproj` in
 Xcode and build the "UnitTesting" target.
 
+
 Author
 ------
 
 [David E. Wheeler](http://justatheory.com/)
+[Orlando Aleman](http://orlandoaleman.com/)
 
 Copyright and License
 ---------------------
