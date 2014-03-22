@@ -1,0 +1,36 @@
+/* 
+  NSDate+HumanInterval.strings
+  orlandoaleman.com
+
+  Created by Orlando Aleman Ortiz on 27/02/13.
+*/
+
+"%u days ago" = "hace %u días";
+"%u days" = "%u días";
+"%u hours ago" = "hace %u horas";
+"%u hours" = "%u horas";
+"%u mins" = "%u mins";
+"%u minutes ago" = "hace %u minutos";
+"%u months ago" = "hace %u meses";
+"%u months" = "%u meses";
+"%u weeks ago" = "hace %u semanas";
+"%u weeks" = "%u semanas";
+"%u years ago" = "hace %u años";
+"%u years" = "%u años";
+"1 day" = "1 día";
+"1 hour" = "1 hora";
+"1 min" = "1 min";
+"1 week" = "1 semana";
+"1 year" = "1 año";
+"2 days ago" = "hace 2 días";
+"2 days" = "2 días";
+"2 hours ago" = "hace 2 horas";
+"2 hours" = "2 horas";
+"2 weeks ago" = "hace 2 semanas";
+"2 weeks" = "2 semanas";
+"a day ago" = "hace un día";
+"a minute ago" = "hace un minuto";
+"a week ago" = "hace una semana";
+"a year ago" = "hace un año";
+"an hour ago" = "hace una hora";
+"just now" = "ahora";

@@ -1,0 +1,36 @@
+/* 
+  NSDate+HumanInterval.strings
+  orlandoaleman.com
+
+  Created by Orlando Aleman Ortiz on 27/02/13.
+*/
+
+"%u days ago" = "%u days ago";
+"%u days" = "%u days";
+"%u hours ago" = "%u hours ago";
+"%u hours" = "%u hours";
+"%u mins" = "%u mins";
+"%u minutes ago" = "%u minutes ago";
+"%u months ago" = "%u months ago";
+"%u months" = "%u months";
+"%u weeks ago" = "%u weeks ago";
+"%u weeks" = "%u weeks";
+"%u years ago" = "%u years ago";
+"%u years" = "%u years";
+"1 day" = "1 day";
+"1 hour" = "1 hour";
+"1 min" = "1 min";
+"1 week" = "1 week";
+"1 year" = "1 year";
+"2 days ago" = "2 days ago";
+"2 days" = "2 days";
+"2 hours ago" = "2 hours ago";
+"2 hours" = "2 hours";
+"2 weeks ago" = "2 weeks ago";
+"2 weeks" = "2 weeks";
+"a day ago" = "a day ago";
+"a minute ago" = "a minute ago";
+"a week ago" = "a week ago";
+"a year ago" = "a year ago";
+"an hour ago" = "an hour ago";
+"just now" = "just now";
