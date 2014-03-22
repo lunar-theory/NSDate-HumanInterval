@@ -39,8 +39,8 @@ Xcode and build the "UnitTesting" target.
 Author
 ------
 
-[David E. Wheeler](http://justatheory.com/)
-[Orlando Aleman](http://orlandoaleman.com/)
+* [David E. Wheeler](http://justatheory.com/)
+* [Orlando Aleman](http://orlandoaleman.com/)
 
 Copyright and License
 ---------------------
